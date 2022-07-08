@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-gp timeout extend
+(gp ports await 23000 1>/dev/null && gp timeout extend) &
